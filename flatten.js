@@ -14,7 +14,7 @@ const eqArrays = function(array1, array2) {
 };
 
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
   } else {
@@ -27,9 +27,9 @@ const flatten = function(array) {
 
   let flattenedArray = [];
 
-  function extractElements(elements) {
+  const extractElements = function(elements) {
     elements.forEach(element => flattenedArray.push(element));
-  }
+  };
 
   array.forEach(element => {
     if (Array.isArray(element)) {
@@ -37,10 +37,10 @@ const flatten = function(array) {
     } else {
       flattenedArray.push(element);
     }
-  })
+  });
 
   return flattenedArray;
-}
+};
 
 
 //Test case

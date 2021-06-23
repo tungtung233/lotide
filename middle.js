@@ -43,11 +43,11 @@ const middle = function(array) {
 let testArray = [1, 2, 3, 4, 5];
 // checks that the two arrays do not equal each other
 // assertArraysEqual(middle(testArray), [1, 2, 3, 4, 5]);
-assertArraysEqual(middle([1]), [1])
-assertArraysEqual(middle([1, 2]), [1, 2])
-assertArraysEqual(middle([1, 2, 3]), [1, 2, 3])
-assertArraysEqual(middle([1, 2, 3, 4]), [1, 2, 3, 4])
+assertArraysEqual(middle([1]), [1]);
+assertArraysEqual(middle([1, 2]), [1, 2]);
+assertArraysEqual(middle([1, 2, 3]), [1, 2, 3]);
+assertArraysEqual(middle([1, 2, 3, 4]), [1, 2, 3, 4]);
 
 
 // checks that testArray remains unaltered after going through the middle function
-eqArrays(testArray, [1, 2, 3, 4, 5])
+eqArrays(testArray, [1, 2, 3, 4, 5]);
