@@ -9,20 +9,20 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
 
-  sentence = sentence.split(' ').join('')
+  sentence = sentence.split(' ').join('');
   let finalCount = {};
 
   for (const letter of sentence) {
-    finalCount[letter] ? finalCount[letter] ++ : finalCount[letter] = 1
+    finalCount[letter] ? finalCount[letter] ++ : finalCount[letter] = 1;
   }
 
   return finalCount;
-}
+};
 
 
 // Test conditions
 
-let result = countLetters('abcdefg abcd abc ab a')
+let result = countLetters('abcdefg abcd abc ab a');
 assertEqual(result['a'], 5);
 assertEqual(result['b'], 4);
 assertEqual(result['c'], 3);

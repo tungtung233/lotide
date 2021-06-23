@@ -21,7 +21,7 @@ const countOnly = function(allItems, someItems) {
   // going through the someItems list and finding the keys that are 'true' - the items we need to count
   for (let name in someItems) {
     if (someItems[name]) {
-      itemsToCount.push(name)
+      itemsToCount.push(name);
     }
   }
 
@@ -30,20 +30,20 @@ const countOnly = function(allItems, someItems) {
     if (allItems.includes(element)) {
       finalCount[element] = 0;
     }
-  })
+  });
 
   // looping through every key in finalCount, then counting how many times it appears in allItems
   for (let actualItemsToCount in finalCount) {
     allItems.filter(item => {
       if (item === actualItemsToCount) {
-        finalCount[actualItemsToCount] ++
+        finalCount[actualItemsToCount] ++;
       }
-    })
+    });
   }
 
   return finalCount;
 
-}
+};
 
 const firstNames = [
   "Karl",
