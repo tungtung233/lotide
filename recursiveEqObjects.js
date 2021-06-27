@@ -39,3 +39,7 @@ const recursiveEqObjects = function(object1, object2) {
   }
   return true
 }
+
+console.log(recursiveEqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => true
+console.log(recursiveEqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => false
+console.log(recursiveEqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })) // => false
