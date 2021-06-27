@@ -7,16 +7,16 @@ const assertEqual = function(actual, expected) {
 };
 
 
-const findKeyByValue = function (objectList, property) {
+const findKeyByValue = function(objectList, property) {
   for (const [key, value] of Object.entries(objectList)) {
-    if (value === property) return(key)
-  } 
-}
+    if (value === property) return (key);
+  }
+};
 
 //Test conditions
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
@@ -30,7 +30,7 @@ const ageOfPeople = {
   Nick: 27,
   Raymond: 58,
   Ruby: 57
-}
+};
 
 assertEqual(findKeyByValue(ageOfPeople, 25), 'Veronica');
 assertEqual(findKeyByValue(ageOfPeople, 58), 'Raymond');

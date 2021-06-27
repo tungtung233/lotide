@@ -25,11 +25,11 @@ const assertArraysEqual = function(array1, array2) {
 const map = function(originalArray, callback) {
   const results = [];
   for (let item of originalArray) {
-    results.push(callback(item))
+    results.push(callback(item));
   }
 
   return results;
-}
+};
 
 
 //Test conditions
@@ -39,9 +39,9 @@ assertArraysEqual(results1, [2, 4, 6, 8]);
 
 
 const words = ['light', 'house', 'labs'];
-const results2 = map(words, word => word.toUpperCase())
-assertArraysEqual(results2, ['LIGHT', 'HOUSE', 'LABS'])
+const results2 = map(words, word => word.toUpperCase());
+assertArraysEqual(results2, ['LIGHT', 'HOUSE', 'LABS']);
 
 const wordLength = ['hello', 'beautiful', 'people'];
-const results3 = map(wordLength, word => word.length)
-assertArraysEqual(results3, [5, 9, 6])
+const results3 = map(wordLength, word => word.length);
+assertArraysEqual(results3, [5, 9, 6]);

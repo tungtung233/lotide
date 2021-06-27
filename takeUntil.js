@@ -25,14 +25,14 @@ const assertArraysEqual = function(array1, array2) {
 
 const takeUntil = function(array, callback) {
   let newArray = [];
-  let counter = 0
+  let counter = 0;
 
   array.forEach(element => {
-    !callback(element) && counter === 0 ? newArray.push(element) : counter++
-  })
+    !callback(element) && counter === 0 ? newArray.push(element) : counter++;
+  });
 
-  return newArray
-}
+  return newArray;
+};
 
 
 
