@@ -17,6 +17,10 @@ function recursiveEqArrays(actual, expected) {
   return true;
 }
 
-console.log(recursiveEqArrays([[2, 3], [4]], [[2, 3], [4]])); // true
-console.log(recursiveEqArrays([[2, 3], [4]], [[2, 3], 4])); // => false
-console.log(recursiveEqArrays([[2, 3, [[[[1]]]]], [4]], [[2, 3, [[[[1]]]]], [4]])); // => true
+// console.log(recursiveEqArrays([[2, 3], [4]], [[2, 3], [4]])); // true
+// console.log(recursiveEqArrays([[2, 3], [4]], [[2, 3], 4])); // => false
+// console.log(recursiveEqArrays([[2, 3, [[[[1]]]]], [4]], [[2, 3, [[[[1]]]]], [4]])); // => true
+
+
+
+module.exports = recursiveEqArrays;
