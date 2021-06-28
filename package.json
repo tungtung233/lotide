@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@vleung233/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a mini clone of the Lodash library - created for educational purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/tungtung233/lotide.git"
   },
-  "author": "",
+  "author": "Veronica Leung",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tungtung233/lotide/issues"
