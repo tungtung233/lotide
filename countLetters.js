@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+const assert = require('chai').assert;
 
 const countLetters = function(sentence) {
 
@@ -16,13 +16,14 @@ const countLetters = function(sentence) {
 // Test conditions
 
 // let result = countLetters('abcdefg abcd abc ab a');
-// assertEqual(result['a'], 5);
-// assertEqual(result['b'], 4);
-// assertEqual(result['c'], 3);
-// assertEqual(result['d'], 2);
-// assertEqual(result['e'], 1);
-// assertEqual(result['f'], 1);
-// assertEqual(result['g'], 1);
+// assert.equal(result['b'], 4);
+// assert.equal(result['c'], 3);
+// assert.equal(result['a'], 5);
+// assert.equal(result['d'], 2);
+// assert.equal(result['e'], 1);
+// assert.equal(result['f'], 1);
+// assert.equal(result['g'], 1);
+
 
 
 

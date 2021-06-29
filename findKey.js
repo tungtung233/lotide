@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+const assert = require('chai').assert;
 
 
 const findKey = function(object, callback) {
@@ -22,7 +22,7 @@ const findKey = function(object, callback) {
 //   "Akelarre":  { stars: 3 }
 // }, x => x.stars === 2)); // => "noma"
 
-// assertEqual(result1, 'noma');
+// assert.equal(result1, 'noma');
 
 
 
